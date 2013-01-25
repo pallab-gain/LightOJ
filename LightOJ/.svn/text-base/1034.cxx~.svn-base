@@ -1,0 +1,126 @@
+/*
+ * Author  : Pallab
+ * Program : 1034.cxx
+ *
+ * 2012-01-24 14:48:00
+ * I have not failed, I have just found 10000 ways that won't work.
+ *
+ */
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <sstream>
+#include <fstream>
+#include <string>
+#include <list>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <functional>
+#include <bitset>
+#include <iomanip>
+
+#include <ctime>
+#include <cassert>
+#include <cstdio>
+#include <cmath>
+#include <cstring>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+
+using namespace std;
+
+#define CI( x ) scanf("%d",&x)
+#define CL( x ) scanf("%lld",&x)
+#define CD( x ) scanf("%lf",&x )
+#define foR(i1,st,ed) for(int i1 = st , j1 = ed ; i1 < j1 ; ++i1 )
+#define fo(i1,ed) foR( i1 , 0 , ed )
+#define foE(i1,st,ed) foR( i1, st, ed+1 )
+#define foit(i, x) for (typeof((x).begin()) i = (x).begin(); i != (x).end(); i++)
+#define bip system("pause")
+#define Int long long
+#define pb push_back
+#define SZ(X) (int)(X).size()
+#define LN(X) (int)(X).length()
+#define mk make_pair
+#define f first
+#define s second
+#define SET( ARRAY , VALUE ) memset( ARRAY , VALUE , sizeof(ARRAY) )
+
+const int maxn = 10000;
+vector< vector<int> > g;
+int n,e;
+int RES;
+inline void Read() {
+    CI(n);
+    CI(e);
+    g.assign(n,vector<int>());
+    int u,v;
+    fo(i,e) {
+        CI(u);
+        CI(v);
+        --u;
+        --v;
+        g[u].pb(v);
+    }
+
+}
+int used[maxn];
+int order[maxn];
+int cnt;
+void dfs1(int u) {
+    used[u]=1;
+    fo(i,SZ(g[u])) {
+        int v = g[u][i];
+        if ( !used[v] )
+            dfs1(v);
+
+    }
+
+    order[cnt++]=u;
+}
+
+void dfs2(int u) {
+    used[u]=1;
+    fo(i,SZ(g[u])) {
+        int v = g[u][i];
+        if (!used[v])
+            dfs2(v);
+    }
+}
+inline void SCC() {
+    cnt=0;
+    SET(used,0);
+    fo(u,n) {
+        if (!used[u])
+            dfs1(u);
+    }
+
+    SET(used,0);
+    RES=0;
+    for (int i=cnt-1; i>=0;--i ) {
+        int u = order[i];
+        if (!used[u]) {
+            ++RES;
+            dfs2(u);
+        }
+    }
+}
+inline void Proc() {
+    SCC();
+    cout<<RES<<"\n";
+}
+int main() {
+    int t;
+    CI(t);
+    foE(i,1,t) {
+        Read();
+        cout<<"Case "<<i<<": ";
+        Proc();
+    }
+
+    return 0;
+}
+// kate: indent-mode cstyle; space-indent on; indent-width 0; 

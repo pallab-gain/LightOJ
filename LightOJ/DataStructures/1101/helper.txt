@@ -1,0 +1,6 @@
+foR ( i,0,nodeCount ) {
+        for ( auto &x:adj[i] ) {
+            cout<<i<<' '<< x.first<<' '<<x.second<<"\n";
+        }
+    }
+    puts ( "-----------" );
