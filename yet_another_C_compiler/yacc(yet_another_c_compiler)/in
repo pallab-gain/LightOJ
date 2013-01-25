@@ -1,0 +1,45 @@
+int count, total;
+int average,e;
+average=total = 0;
+/*
+this is a multiline
+	comments
+*/
+// and this is single line comment
+//main can not have return float
+float main ( void ){
+	int i;
+	i = 0;
+	int q;
+	int r,x;
+	q = e = r = ( 1 + 2 ) ;
+	x = 2 ;
+
+	if ( x > 2 ) {
+		int x ;
+	}
+	y = 2;
+
+	if ( x > (y<1) ){
+		int x ;
+	}
+	else{
+		q = e = r = ( 1 + 2 ) ;
+	}
+	
+	while( x > 0 ){
+		int q;
+	}
+	
+	do{
+		int q;
+	}while( x > p );
+	
+	for( p = 0; p < 100; p = p + 1 ){
+		int q;
+	}
+	
+		
+	return average;
+}
+

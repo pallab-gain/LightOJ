@@ -1,0 +1,10 @@
+int x,y;
+
+int main(void) {
+	int z;
+	x = y = 10
+	print (x);
+	print (y); 
+    return 0;
+}
+

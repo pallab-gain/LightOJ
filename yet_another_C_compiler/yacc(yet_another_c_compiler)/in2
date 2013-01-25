@@ -1,0 +1,40 @@
+int count, total;
+int x ;
+float average;
+
+int main ( void ){
+	int i;
+	i = 0;
+	int q,e,r,y;
+	q = e = r = ( 1 + 2 ) ;
+	x = 2 ;
+	
+	if ( x > 2 ) {
+		;
+	}
+	y = 2;
+
+	if ( x > (y<1) ){
+		;
+	}
+	else{
+		q = e = r = ( 1 + 2 ) ;
+	}
+	int p;	
+	while( x > 0 ){
+		//int q;
+		;
+	}
+
+
+	for( p = 0; p < 100; p = p + 1 ){
+		if( x > 10 ){
+			x = x+1;
+		}
+	}
+	
+	return x;
+}
+
+  
+int me;

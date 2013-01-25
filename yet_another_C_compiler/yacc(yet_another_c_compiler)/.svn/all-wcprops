@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)
+END
+Symbol.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/Symbol.h
+END
+clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/clean.sh
+END
+in5
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in5
+END
+in6
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in6
+END
+header.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/header.in
+END
+Parser.y
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/Parser.y
+END
+footer.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/footer.in
+END
+in
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/build.sh
+END
+sample_output.asm
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/sample_output.asm
+END
+Parser.l
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/Parser.l
+END
+in2
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in2
+END
+in3
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in3
+END
+build2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/build2.sh
+END
+in4
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/698/trunk/yet_another_C_compiler/yacc(yet_another_c_compiler)/in4
+END

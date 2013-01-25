@@ -1,0 +1,38 @@
+int x;
+int y,z ;
+int w;
+
+int l ;
+l=z=10;
+
+w = l+10;
+float rr;
+rr =  100.8+100.0;
+
+x = (1+10+4);
+int fun2(int a, int b, int c){
+	int ami;
+	return 0;
+}
+
+int helloworld( void ){
+	int tumi,ami;
+	ami = fun2(10,20,30);
+return ami;
+}
+
+int main( void )
+{	
+	
+	int i;
+
+	int ami,tumi;
+	if( x > 0 ){
+		w  = 10;
+	}
+	ami = fun2(20,20,20);
+	for( i = 0 ; i < 20 ; i = i + 1 ){
+		x = x + 1;
+	}
+	return 0;
+}

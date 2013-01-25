@@ -1,0 +1,6 @@
+		SECTION .data
+fmtStr:	db	"%s", 0	; The printf format for newline
+fmtInt:	db	"%d", 0	; The printf format for integer
+fmtFlo:	db	"%f", 0	; The printf format for floating
+
+

@@ -1,0 +1,151 @@
+Yet Another Compiler Project
+
+Project:
+	A subset Of C Compiler
+	
+Files:
+	Parser.l
+	Parser.y
+	Symbol.h
+	output.asm
+	build.sh
+	clean.sh
+	build2.sh
+	
+	header.in
+	footer.in
+
+Version for my tools:
+	- flex 2.5.35
+	- bison (GNU Bison) 2.5
+	- NASM version 2.09.10	
+	- gcc-4.6
+	- platform linux [ kernel 3.2.0-29-generic-pae ]
+	
+How to run:
+	make script executable
+		$ chmod +x build.sh 
+		$ chmod +x clean.sh
+		$ chmod +x build2.sh
+	run :
+		$ ./build.sh <(here_goes_sample_intput_files)
+			- example
+				$ ./build.sh <in
+				$ ./build.sh <in2
+				$ ./build.sh <in3
+				$ ./build.sh <in4
+				$ ./build.sh <in5
+				$ ./build.sh <in6
+		$ ./build2.sh  /* generate nasm code,compile,make object file*/
+		$ ./output     /* run */
+		$ ./clean.sh   /* clean lex, yacc and nasm produced files */
+		
+
+Features :	
+
+	- Funtions
+		CAN:	
+			- successfully handle function(s) scopes 
+			- can seperate main function and other functions
+			- can call function from antoher function
+			- detect during a function call
+				- invalid/wrong number of arguments passing 
+				- invalid type(s) and wrong parameter type pass
+				- invalid return type 
+		CANNOT:
+			- 
+	- variable
+		CAN:
+	  		- int			
+	  		- float
+	  		- identifier
+	  		- can seperate global and local variable(s)
+	  	CANNOT:
+	  		- no array
+	  		- no char type
+	  		- no struct
+	  		- no pointer
+	  		- no constant
+	  		- no register
+	  		- etc
+	  		
+	- expression(s) 
+		CAN:
+			 - expression + expression
+			 - expression - expression
+			 - expression * expression
+			 - expression / expression 
+			 - expression % expression
+			 - expression > expression
+			 - expression < expression
+			 - expression == expression
+			 - expression >= expression
+			 - expression <= expression
+			 - expression && expression
+			 - expression || expression
+			 - expression != expression
+			 - expression = expression
+			 - ( expression )
+		CANNOT:
+			 - - expression
+			 - + expression
+			 - ++ expression
+			 - -- expression
+			 - expression+= expression
+			 - expression++
+			 - expression--
+	- Comments		 
+		CAN:
+			- Do support c-style comments
+			- both single line and multiline
+		CANNOT:
+			-
+			
+	- Commands:
+		CAN:
+			- if 
+			- if else
+			- do while
+			- while 
+			- for
+			- and nested commands of all above commands
+		CANNOT:
+			- commands arguments can't be empty
+			- example :
+				- for ( ; ; ) /* invalid */
+				- for ( expr ; expr ; expr ) /* valid */
+	- Input / Output
+		CAN:
+			- take a [number/expression/identifier] as a argument an can print it's value
+			- print ( x ) /* the only output function right now */
+		CANNOT:
+			- scanf and other Input function and output functions
+			
+	- nasm:
+		CAN:
+			- handle expression(s)
+			- int
+			- float
+			- string [ currently only to print (newline) ]
+			- simple and nested assignment block
+			- print the result
+			
+		CANNOT:
+			-any nested
+				- if else
+				- for block
+				- while block
+				- do while block
+				- function block
+				- arithmentic operation
+			
+	- Data Structure
+		CAN :
+			- Array of struct object for symbol table entry
+			- stack to keep track of scopes
+			- AST -like [ not AST ] array based tree 
+				-for all sementic check
+			- Stact based code generator
+				-for nasm code generator
+		CANNOT:
+			-

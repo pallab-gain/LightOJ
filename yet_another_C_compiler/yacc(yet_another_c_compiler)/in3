@@ -1,0 +1,29 @@
+int count, total;
+float average;
+
+int x;
+
+
+/*
+int i;
+for (i= (x>6); i<10; i = i + 1) {
+	total = total + i ;
+}
+
+count = i;
+average = total / count;
+*/
+
+int main (void){
+
+	return 0;
+}
+int ff( int y, int ll ){
+	return 1.2;
+}
+int fact( int x, int y, int z ){
+	int pp;
+	pp = ff( 10, 30 );
+return 0;
+}
+

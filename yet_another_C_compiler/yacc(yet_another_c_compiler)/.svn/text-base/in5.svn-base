@@ -1,0 +1,13 @@
+int x,y;
+float yy;
+int main(void) {
+	int z;
+	x = y = 30;
+	x = 10;
+	z = x;
+
+	print ( x );
+	print ( y );
+	print ( z );
+    return 0;
+}
